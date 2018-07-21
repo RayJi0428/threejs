@@ -1,2 +1,35 @@
 //教學影片
 https://www.youtube.com/watch?v=ABV1mK1CGOY
+
+2018.07.21
+THREE_JS官方網站(看範例,查API...)
+https://threejs.org/docs/index.html
+
+include three.js
+
+建立WebGLRenderer
+
+新建canvas賦予現成canvas
+
+初始化需要camera和scene
+
+vsCode 
+安裝chrome debug
+設定launch.json新增chrome組態(記得要添加apache路徑)
+
+使用Blender
+
+增加threejs插件
+file/User Preferences/add ons/threejs
+
+Type:Geomtry
+https://threejs.org/docs/#manual/introduction/Loading-3D-models
+
+Recommended workflow
+Where possible, we recommend using glTF (GL Transmission Format). Both .GLB and .GLTF versions of the format are well supported. Because glTF is focused on runtime asset delivery, it is compact to transmit and fast to load. Features include meshes, materials, textures, skins, skeletons, morph targets, animations, lights, and cameras.
+
+
+//3dMax輸出GLTF教學
+Public-domain glTF files are available on sites like Sketchfab, or various tools include glTF export:
+http://doc.babylonjs.com/resources/3dsmax_to_gltf
+http://doc.babylonjs.com/resources/3dsmax#how-to-install-the-3ds-max-plugin
