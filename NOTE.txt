@@ -26,10 +26,18 @@ Type:Geomtry
 https://threejs.org/docs/#manual/introduction/Loading-3D-models
 
 Recommended workflow
-Where possible, we recommend using glTF (GL Transmission Format). Both .GLB and .GLTF versions of the format are well supported. Because glTF is focused on runtime asset delivery, it is compact to transmit and fast to load. Features include meshes, materials, textures, skins, skeletons, morph targets, animations, lights, and cameras.
-
+Where possible, we recommend using glTF (GL Transmission Format).
+Both .GLB and .GLTF versions of the format are well supported.
+Because glTF is focused on runtime asset delivery, it is compact to transmit and fast to load.
+Features include meshes, materials, textures, skins, skeletons, morph targets, animations, lights, and cameras.
+When glTF is not an option, popular formats such as FBX, OBJ, or COLLADA are also available and regularly maintained.
 
 //3dMax輸出GLTF教學
 Public-domain glTF files are available on sites like Sketchfab, or various tools include glTF export:
 http://doc.babylonjs.com/resources/3dsmax_to_gltf
 http://doc.babylonjs.com/resources/3dsmax#how-to-install-the-3ds-max-plugin
+
+3dmax使用學生專案安裝2015~2018(2019插件還沒出...)
+務必先關閉3dMax
+將Max2Babylon-1.2.18.zip解壓縮，把所有dll放到C:/Programs/Autodesk/3ds Max 2015/bin/assemblies內(視max版本調整路徑)
+重啟3dMax確認help右邊是否有Babylon插件,有表示成功

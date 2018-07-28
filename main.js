@@ -27,7 +27,8 @@ function init() {
 	near — Camera frustum near plane.
 	far — Camera frustum far plane.
 	*/
-	camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 3000);
+	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+	camera.position.z = 100;
 	//camera.position.z = 1;
 
 	//建立mesh
@@ -43,9 +44,16 @@ function init() {
 	mesh = new THREE.Mesh(geometry, material);
 	mesh.position.set(0, 0, -1000);
 
+
+	var loader = new THREE.BabylonLoader();
+	loader.load('assets/test.babylon', function (babylonScene ) {
+		scene = babylonScene;
+		//scene.add( object );		
+	});
+
 	//建立scene並放上mesh
 	scene = new THREE.Scene();
-	scene.add(mesh);
+	//scene.add(mesh);
 
 	//light
 	var light = new THREE.AmbientLight(0xffffff, 0.5);
