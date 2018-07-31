@@ -8,11 +8,14 @@ var geometry, material, mesh;
 //初始化
 init();
 
-//啟動enterframe animate
-animate();
-
+var box;
+var car;
+var mixer;
+var clock;
 function init() {
-
+	
+	clock = new THREE.Clock();
+	
 	//建立renderer
 	renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setSize(window.innerWidth, window.innerHeight);
@@ -28,7 +31,8 @@ function init() {
 	far — Camera frustum far plane.
 	*/
 	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-	camera.position.z = 100;
+	camera.position.z = 40;
+	camera.position.y = 10;
 	//camera.position.z = 1;
 
 	//建立mesh
@@ -44,33 +48,69 @@ function init() {
 	mesh = new THREE.Mesh(geometry, material);
 	mesh.position.set(0, 0, -1000);
 
-
+	/*
 	var loader = new THREE.BabylonLoader();
 	loader.load('assets/test.babylon', function (babylonScene ) {
 		scene = babylonScene;
 		//scene.add( object );		
 	});
-
+	*/
+	
 	//建立scene並放上mesh
 	scene = new THREE.Scene();
+	
+	var gltfLoader = new THREE.GLTFLoader();
+	gltfLoader.load('assets/test.gltf', 
+		function (gltf){
+			//scene = gltf.scene;
+			scene.add(gltf.scene);
+			car = gltf.scene.children[0];
+			box = gltf.scene.children[1];
+			mixer = new THREE.AnimationMixer( car );
+			mixer.clipAction( gltf.animations[ 0 ] ).play();
+			animate();
+			//scene = gltf.scene;
+			//scene = gltf.scene;
+			//camera = gltf.cameras[0];
+		},
+		function (xhr){
+			console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		},
+		function ( error ) {
+			console.log( 'An error happened' );
+		}
+	);
+	
 	//scene.add(mesh);
 
 	//light
-	var light = new THREE.AmbientLight(0xffffff, 0.5);
+	var light = new THREE.DirectionalLight(0xffffff, 20);
+	light.position.z = 20;
+	light.position.y = 10;
 	scene.add(light);
 
-	var light1 = new THREE.PointLight(0xffffff, 0.5);
-	scene.add(light1);
+	//var light1 = new THREE.PointLight(0xffffff, 0.5);
+	//scene.add(light1);
 }
 
 function animate() {
 
 	//觸發下次animate
 	requestAnimationFrame(animate);
-
+	
+	mixer.update( clock.getDelta() );
 	//轉動mesh
-	mesh.rotation.x += 0.01;
-	mesh.rotation.y += 0.02;
+	/*
+	if (car){
+		car.rotation.y += 0.1;
+	}
+	
+	if (box){
+		box.rotation.y += 0.05;
+	}
+	*/
+	
+	//car.rotation.y += 0.02;
 
 	//更新畫面
 	renderer.render(scene, camera);
