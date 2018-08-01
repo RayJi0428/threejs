@@ -13,9 +13,9 @@ var car;
 var mixer;
 var clock;
 function init() {
-	
+
 	clock = new THREE.Clock();
-	
+
 	//建立renderer
 	renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setSize(window.innerWidth, window.innerHeight);
@@ -30,7 +30,7 @@ function init() {
 	near — Camera frustum near plane.
 	far — Camera frustum far plane.
 	*/
-	camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+	camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 2000);
 	camera.position.z = 40;
 	camera.position.y = 10;
 	//camera.position.z = 1;
@@ -55,33 +55,32 @@ function init() {
 		//scene.add( object );		
 	});
 	*/
-	
+
 	//建立scene並放上mesh
 	scene = new THREE.Scene();
-	
+	scene.background = new THREE.Color(0xaaaaaa);
+
 	var gltfLoader = new THREE.GLTFLoader();
-	gltfLoader.load('assets/test.gltf', 
-		function (gltf){
+	gltfLoader.load('assets/test.gltf',
+		function (gltf) {
 			//scene = gltf.scene;
 			scene.add(gltf.scene);
 			car = gltf.scene.children[0];
 			box = gltf.scene.children[1];
-			mixer = new THREE.AnimationMixer( car );
-			mixer.clipAction( gltf.animations[ 0 ] ).play();
+			mixer = new THREE.AnimationMixer(car);
+			mixer.clipAction(gltf.animations[0]).play();
 			animate();
 			//scene = gltf.scene;
 			//scene = gltf.scene;
 			//camera = gltf.cameras[0];
 		},
-		function (xhr){
-			console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+		function (xhr) {
+			console.log((xhr.loaded / xhr.total * 100) + '% loaded');
 		},
-		function ( error ) {
-			console.log( 'An error happened' );
+		function (error) {
+			console.log('An error happened');
 		}
 	);
-	
-	//scene.add(mesh);
 
 	//light
 	var light = new THREE.DirectionalLight(0xffffff, 20);
@@ -91,14 +90,23 @@ function init() {
 
 	//var light1 = new THREE.PointLight(0xffffff, 0.5);
 	//scene.add(light1);
+
+
+	var geometry;
+
+	//Cube
+	geometry = new THREE.CubeGeometry(20, 10, 10);
+	var cubeMat = new THREE.MeshLambertMaterial({ color: 0xff0000 });
+	var geObj = new THREE.Mesh(geometry, cubeMat);
+	//scene.add(geObj);
 }
 
 function animate() {
 
 	//觸發下次animate
 	requestAnimationFrame(animate);
-	
-	mixer.update( clock.getDelta() );
+
+	mixer.update(clock.getDelta());
 	//轉動mesh
 	/*
 	if (car){
@@ -109,10 +117,11 @@ function animate() {
 		box.rotation.y += 0.05;
 	}
 	*/
-	
+
 	//car.rotation.y += 0.02;
 
 	//更新畫面
 	renderer.render(scene, camera);
 
 }
+
