@@ -1,0 +1,1328 @@
+{
+  "producer": {
+    "name": "3dsmax",
+    "version": "2018",
+    "exporter_version": "1.2.18",
+    "file": "test.babylon"
+  },
+  "autoClear": true,
+  "clearColor": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "ambientColor": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "fogMode": 0,
+  "fogColor": null,
+  "fogStart": 0.0,
+  "fogEnd": 0.0,
+  "fogDensity": 0.0,
+  "gravity": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "physicsEngine": null,
+  "physicsEnabled": false,
+  "physicsGravity": null,
+  "cameras": [
+    {
+      "isStereoscopicSideBySide": false,
+      "lockedTargetId": null,
+      "type": "FreeCamera",
+      "rotation": null,
+      "rotationQuaternion": [
+        0.6852,
+        0.0,
+        0.0,
+        -0.7284
+      ],
+      "target": [
+        -1.617,
+        5.0682,
+        -51.7563
+      ],
+      "fov": 0.6024,
+      "minZ": 0.1,
+      "maxZ": 10000.0,
+      "speed": 1.0,
+      "inertia": 0.9,
+      "interaxialDistance": 0.0637,
+      "checkCollisions": false,
+      "applyGravity": false,
+      "ellipsoid": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mode": 0,
+      "orthoLeft": null,
+      "orthoRight": null,
+      "orthoBottom": null,
+      "orthoTop": null,
+      "metadata": null,
+      "name": "Camera001",
+      "id": "4e4cc970-f88d-445f-8056-288105d2fa24",
+      "parentId": null,
+      "position": [
+        -1.617,
+        5.1293,
+        -52.7545
+      ],
+      "animations": [],
+      "autoAnimate": false,
+      "autoAnimateFrom": 0,
+      "autoAnimateTo": 0,
+      "autoAnimateLoop": false,
+      "tag": ""
+    }
+  ],
+  "activeCameraID": "4e4cc970-f88d-445f-8056-288105d2fa24",
+  "lights": [
+    {
+      "direction": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "type": 1,
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "specular": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 3.0,
+      "range": 3.40282347E+38,
+      "exponent": 0.0,
+      "angle": 0.0,
+      "groundColor": null,
+      "excludedMeshesIds": [],
+      "includedOnlyMeshesIds": [],
+      "metadata": null,
+      "name": "FDirect001",
+      "id": "0fe4398c-d64c-4ef5-8db0-1383c0ebbaa9",
+      "parentId": null,
+      "position": [
+        0.1712,
+        3.6137,
+        -208.9202
+      ],
+      "animations": [],
+      "autoAnimate": false,
+      "autoAnimateFrom": 0,
+      "autoAnimateTo": 0,
+      "autoAnimateLoop": false,
+      "tag": ""
+    }
+  ],
+  "meshes": [
+    {
+      "materialId": "a088cf38-400e-4987-a2fa-5015915af336",
+      "isEnabled": true,
+      "isVisible": true,
+      "pickable": false,
+      "pivotMatrix": null,
+      "positions": null,
+      "normals": null,
+      "tangents": null,
+      "uvs": null,
+      "uvs2": null,
+      "colors": null,
+      "hasVertexAlpha": false,
+      "matricesIndices": null,
+      "matricesWeights": null,
+      "matricesIndicesExtra": null,
+      "matricesWeightsExtra": null,
+      "indices": null,
+      "checkCollisions": false,
+      "receiveShadows": true,
+      "infiniteDistance": false,
+      "billboardMode": 0,
+      "visibility": 1.0,
+      "subMeshes": null,
+      "instances": null,
+      "skeletonId": -1,
+      "numBoneInfluencers": 4,
+      "showBoundingBox": false,
+      "showSubMeshesBoundingBox": false,
+      "applyFog": true,
+      "alphaIndex": 1000,
+      "physicsImpostor": 0,
+      "physicsMass": 0.0,
+      "physicsFriction": 0.0,
+      "physicsRestitution": 0.0,
+      "metadata": null,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scaling": [
+        67.6226,
+        67.6226,
+        67.6226
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "actions": null,
+      "name": "turret-01",
+      "id": "a7fdc9d0-a2f3-46f5-aa53-15d1fe70494f",
+      "parentId": null,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "animations": [
+        {
+          "name": "position animation",
+          "property": "position",
+          "dataType": 1,
+          "enableBlending": false,
+          "blendingSpeed": 0.01,
+          "loopBehavior": 1,
+          "framePerSecond": 30,
+          "keys": [
+            {
+              "frame": 0,
+              "values": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 6,
+              "values": [
+                0.8957,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 9,
+              "values": [
+                1.3354,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 11,
+              "values": [
+                1.6234,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 13,
+              "values": [
+                1.9061,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 15,
+              "values": [
+                2.1825,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 17,
+              "values": [
+                2.4517,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 18,
+              "values": [
+                2.5834,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 19,
+              "values": [
+                2.7128,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 20,
+              "values": [
+                2.84,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 21,
+              "values": [
+                2.9648,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 22,
+              "values": [
+                3.087,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 23,
+              "values": [
+                3.2067,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 24,
+              "values": [
+                3.3235,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 25,
+              "values": [
+                3.4375,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 26,
+              "values": [
+                3.5485,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 27,
+              "values": [
+                3.6563,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 28,
+              "values": [
+                3.761,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 29,
+              "values": [
+                3.8622,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 30,
+              "values": [
+                3.96,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 31,
+              "values": [
+                4.0542,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 32,
+              "values": [
+                4.1446,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 33,
+              "values": [
+                4.2313,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 34,
+              "values": [
+                4.3139,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 35,
+              "values": [
+                4.3925,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 36,
+              "values": [
+                4.4669,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 37,
+              "values": [
+                4.5369,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 38,
+              "values": [
+                4.6026,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 39,
+              "values": [
+                4.6636,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 40,
+              "values": [
+                4.72,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 41,
+              "values": [
+                4.7716,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 42,
+              "values": [
+                4.8182,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 43,
+              "values": [
+                4.8599,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 44,
+              "values": [
+                4.8963,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 45,
+              "values": [
+                4.9275,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 46,
+              "values": [
+                4.9533,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 47,
+              "values": [
+                4.9735,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 48,
+              "values": [
+                4.9882,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 49,
+              "values": [
+                4.997,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 50,
+              "values": [
+                5.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 51,
+              "values": [
+                4.997,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 52,
+              "values": [
+                4.9882,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 53,
+              "values": [
+                4.9735,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 54,
+              "values": [
+                4.9533,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 55,
+              "values": [
+                4.9275,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 56,
+              "values": [
+                4.8963,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 57,
+              "values": [
+                4.8599,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 58,
+              "values": [
+                4.8182,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 59,
+              "values": [
+                4.7716,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 60,
+              "values": [
+                4.72,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 61,
+              "values": [
+                4.6636,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 62,
+              "values": [
+                4.6026,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 63,
+              "values": [
+                4.5369,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 64,
+              "values": [
+                4.4669,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 65,
+              "values": [
+                4.3925,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 66,
+              "values": [
+                4.3139,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 67,
+              "values": [
+                4.2313,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 68,
+              "values": [
+                4.1446,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 69,
+              "values": [
+                4.0542,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 70,
+              "values": [
+                3.96,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 71,
+              "values": [
+                3.8622,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 72,
+              "values": [
+                3.761,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 73,
+              "values": [
+                3.6563,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 74,
+              "values": [
+                3.5485,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 75,
+              "values": [
+                3.4375,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 76,
+              "values": [
+                3.3235,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 77,
+              "values": [
+                3.2067,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 78,
+              "values": [
+                3.087,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 79,
+              "values": [
+                2.9648,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 80,
+              "values": [
+                2.84,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 81,
+              "values": [
+                2.7128,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 82,
+              "values": [
+                2.5834,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 83,
+              "values": [
+                2.4517,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 84,
+              "values": [
+                2.3181,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 86,
+              "values": [
+                2.0451,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 88,
+              "values": [
+                1.7654,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 90,
+              "values": [
+                1.48,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 92,
+              "values": [
+                1.1898,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 95,
+              "values": [
+                0.7475,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "frame": 100,
+              "values": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      ],
+      "autoAnimate": true,
+      "autoAnimateFrom": 0,
+      "autoAnimateTo": 100,
+      "autoAnimateLoop": true,
+      "tag": "",
+      "boundingBoxMinimum": [
+        -0.0729,
+        -0.0037,
+        -0.0638
+      ],
+      "boundingBoxMaximum": [
+        0.0729,
+        0.112,
+        0.0579
+      ],
+      "delayLoadingFile": "test.turret-01.a7fdc9d0-a2f3-46f5-aa53-15d1fe70494f.babylonbinarymeshdata",
+      "hasUVs": true,
+      "_binaryInfo": {
+        "positionsAttrDesc": {
+          "count": 5220,
+          "stride": 3,
+          "offset": 0,
+          "dataType": 1
+        },
+        "normalsAttrDesc": {
+          "count": 5220,
+          "stride": 3,
+          "offset": 20880,
+          "dataType": 1
+        },
+        "uvsAttrDesc": {
+          "count": 3480,
+          "stride": 2,
+          "offset": 41760,
+          "dataType": 1
+        },
+        "indicesAttrDesc": {
+          "count": 1740,
+          "stride": 1,
+          "offset": 55680,
+          "dataType": 0
+        },
+        "subMeshesAttrDesc": {
+          "count": 1,
+          "stride": 5,
+          "offset": 62640,
+          "dataType": 0
+        }
+      }
+    },
+    {
+      "materialId": "73e1df92-ee35-4c9b-81fb-4e8c3f8617f4",
+      "isEnabled": true,
+      "isVisible": true,
+      "pickable": false,
+      "pivotMatrix": null,
+      "positions": null,
+      "normals": null,
+      "tangents": null,
+      "uvs": null,
+      "uvs2": null,
+      "colors": null,
+      "hasVertexAlpha": false,
+      "matricesIndices": null,
+      "matricesWeights": null,
+      "matricesIndicesExtra": null,
+      "matricesWeightsExtra": null,
+      "indices": null,
+      "checkCollisions": false,
+      "receiveShadows": true,
+      "infiniteDistance": false,
+      "billboardMode": 0,
+      "visibility": 1.0,
+      "subMeshes": null,
+      "instances": null,
+      "skeletonId": -1,
+      "numBoneInfluencers": 4,
+      "showBoundingBox": false,
+      "showSubMeshesBoundingBox": false,
+      "applyFog": true,
+      "alphaIndex": 1000,
+      "physicsImpostor": 0,
+      "physicsMass": 0.0,
+      "physicsFriction": 0.0,
+      "physicsRestitution": 0.0,
+      "metadata": null,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scaling": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotationQuaternion": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "actions": null,
+      "name": "Plane001",
+      "id": "e995c9f0-bf08-440b-b4b3-309a78bc8571",
+      "parentId": null,
+      "position": [
+        0.1393,
+        0.0,
+        0.5767
+      ],
+      "animations": [],
+      "autoAnimate": true,
+      "autoAnimateFrom": 0,
+      "autoAnimateTo": 100,
+      "autoAnimateLoop": true,
+      "tag": "",
+      "boundingBoxMinimum": [
+        -11.1835,
+        0.0,
+        -9.9253
+      ],
+      "boundingBoxMaximum": [
+        11.1835,
+        0.0,
+        9.9253
+      ],
+      "delayLoadingFile": "test.Plane001.e995c9f0-bf08-440b-b4b3-309a78bc8571.babylonbinarymeshdata",
+      "hasUVs": true,
+      "_binaryInfo": {
+        "positionsAttrDesc": {
+          "count": 288,
+          "stride": 3,
+          "offset": 0,
+          "dataType": 1
+        },
+        "normalsAttrDesc": {
+          "count": 288,
+          "stride": 3,
+          "offset": 1152,
+          "dataType": 1
+        },
+        "uvsAttrDesc": {
+          "count": 192,
+          "stride": 2,
+          "offset": 2304,
+          "dataType": 1
+        },
+        "indicesAttrDesc": {
+          "count": 96,
+          "stride": 1,
+          "offset": 3072,
+          "dataType": 0
+        },
+        "subMeshesAttrDesc": {
+          "count": 1,
+          "stride": 5,
+          "offset": 3456,
+          "dataType": 0
+        }
+      }
+    },
+    {
+      "materialId": "a522e273-dabe-4f9f-89fb-4f3f2f1bc963",
+      "isEnabled": true,
+      "isVisible": true,
+      "pickable": false,
+      "pivotMatrix": null,
+      "positions": null,
+      "normals": null,
+      "tangents": null,
+      "uvs": null,
+      "uvs2": null,
+      "colors": null,
+      "hasVertexAlpha": false,
+      "matricesIndices": null,
+      "matricesWeights": null,
+      "matricesIndicesExtra": null,
+      "matricesWeightsExtra": null,
+      "indices": null,
+      "checkCollisions": false,
+      "receiveShadows": true,
+      "infiniteDistance": false,
+      "billboardMode": 0,
+      "visibility": 1.0,
+      "subMeshes": null,
+      "instances": null,
+      "skeletonId": -1,
+      "numBoneInfluencers": 4,
+      "showBoundingBox": false,
+      "showSubMeshesBoundingBox": false,
+      "applyFog": true,
+      "alphaIndex": 1000,
+      "physicsImpostor": 0,
+      "physicsMass": 0.0,
+      "physicsFriction": 0.0,
+      "physicsRestitution": 0.0,
+      "metadata": null,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scaling": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rotationQuaternion": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actions": null,
+      "name": "Box001",
+      "id": "32a38f63-04da-488f-89f6-e78185a8d6d2",
+      "parentId": null,
+      "position": [
+        -8.1293,
+        4.8984,
+        -1.0048
+      ],
+      "animations": [],
+      "autoAnimate": true,
+      "autoAnimateFrom": 0,
+      "autoAnimateTo": 100,
+      "autoAnimateLoop": true,
+      "tag": "",
+      "boundingBoxMinimum": [
+        -0.5,
+        -0.1016,
+        -0.5
+      ],
+      "boundingBoxMaximum": [
+        0.5,
+        4.8984,
+        0.5
+      ],
+      "delayLoadingFile": "test.Box001.32a38f63-04da-488f-89f6-e78185a8d6d2.babylonbinarymeshdata",
+      "hasUVs": true,
+      "_binaryInfo": {
+        "positionsAttrDesc": {
+          "count": 7236,
+          "stride": 3,
+          "offset": 0,
+          "dataType": 1
+        },
+        "normalsAttrDesc": {
+          "count": 7236,
+          "stride": 3,
+          "offset": 28944,
+          "dataType": 1
+        },
+        "uvsAttrDesc": {
+          "count": 4824,
+          "stride": 2,
+          "offset": 57888,
+          "dataType": 1
+        },
+        "indicesAttrDesc": {
+          "count": 2412,
+          "stride": 1,
+          "offset": 77184,
+          "dataType": 0
+        },
+        "subMeshesAttrDesc": {
+          "count": 1,
+          "stride": 5,
+          "offset": 86832,
+          "dataType": 0
+        }
+      }
+    }
+  ],
+  "sounds": [],
+  "materials": [
+    {
+      "customType": "BABYLON.StandardMaterial",
+      "ambient": [
+        0.5882,
+        0.5882,
+        0.5882
+      ],
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "specular": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "specularPower": 25.6,
+      "diffuseTexture": {
+        "name": "turret01.jpg",
+        "level": 1.0,
+        "hasAlpha": false,
+        "getAlphaFromRGB": false,
+        "coordinatesMode": 0,
+        "isCube": false,
+        "uOffset": 0.0,
+        "vOffset": 0.0,
+        "uScale": 1.0,
+        "vScale": 1.0,
+        "uAng": 0.0,
+        "vAng": 0.0,
+        "wAng": 0.0,
+        "wrapU": 1,
+        "wrapV": 1,
+        "coordinatesIndex": 0,
+        "isRenderTarget": false,
+        "renderTargetSize": 0,
+        "mirrorPlane": null,
+        "renderList": null,
+        "animations": [],
+        "extensions": null,
+        "samplingMode": 3
+      },
+      "diffuseFresnelParameters": null,
+      "ambientTexture": null,
+      "opacityTexture": null,
+      "opacityFresnelParameters": null,
+      "reflectionTexture": null,
+      "reflectionFresnelParameters": null,
+      "emissiveTexture": null,
+      "lightmapTexture": null,
+      "useLightmapAsShadowmap": false,
+      "emissiveFresnelParameters": null,
+      "specularTexture": null,
+      "bumpTexture": null,
+      "useSpecularOverAlpha": true,
+      "disableLighting": false,
+      "useEmissiveAsIllumination": false,
+      "linkEmissiveWithDiffuse": true,
+      "twoSidedLighting": false,
+      "maxSimultaneousLights": 4,
+      "useGlossinessFromSpecularMapAlpha": false,
+      "name": "01 - Default",
+      "id": "a088cf38-400e-4987-a2fa-5015915af336",
+      "backFaceCulling": true,
+      "wireframe": false,
+      "alpha": 1.0,
+      "alphaMode": 2
+    },
+    {
+      "customType": "BABYLON.StandardMaterial",
+      "ambient": [
+        0.7294,
+        1.0,
+        0.0
+      ],
+      "diffuse": [
+        0.7294,
+        1.0,
+        0.0
+      ],
+      "specular": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "specularPower": 25.6,
+      "diffuseTexture": null,
+      "diffuseFresnelParameters": null,
+      "ambientTexture": null,
+      "opacityTexture": null,
+      "opacityFresnelParameters": null,
+      "reflectionTexture": null,
+      "reflectionFresnelParameters": null,
+      "emissiveTexture": null,
+      "lightmapTexture": null,
+      "useLightmapAsShadowmap": false,
+      "emissiveFresnelParameters": null,
+      "specularTexture": null,
+      "bumpTexture": null,
+      "useSpecularOverAlpha": true,
+      "disableLighting": false,
+      "useEmissiveAsIllumination": false,
+      "linkEmissiveWithDiffuse": true,
+      "twoSidedLighting": false,
+      "maxSimultaneousLights": 4,
+      "useGlossinessFromSpecularMapAlpha": false,
+      "name": "03 - Default",
+      "id": "73e1df92-ee35-4c9b-81fb-4e8c3f8617f4",
+      "backFaceCulling": true,
+      "wireframe": false,
+      "alpha": 1.0,
+      "alphaMode": 2
+    },
+    {
+      "customType": "BABYLON.StandardMaterial",
+      "ambient": [
+        0.588,
+        0.588,
+        0.588
+      ],
+      "diffuse": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "specular": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "specularPower": 25.6,
+      "diffuseTexture": {
+        "name": "box.png",
+        "level": 1.0,
+        "hasAlpha": true,
+        "getAlphaFromRGB": false,
+        "coordinatesMode": 0,
+        "isCube": false,
+        "uOffset": 0.0,
+        "vOffset": 0.0,
+        "uScale": 1.0,
+        "vScale": 1.0,
+        "uAng": 0.0,
+        "vAng": 0.0,
+        "wAng": 0.0,
+        "wrapU": 1,
+        "wrapV": 1,
+        "coordinatesIndex": 0,
+        "isRenderTarget": false,
+        "renderTargetSize": 0,
+        "mirrorPlane": null,
+        "renderList": null,
+        "animations": [],
+        "extensions": null,
+        "samplingMode": 3
+      },
+      "diffuseFresnelParameters": null,
+      "ambientTexture": null,
+      "opacityTexture": null,
+      "opacityFresnelParameters": null,
+      "reflectionTexture": null,
+      "reflectionFresnelParameters": null,
+      "emissiveTexture": null,
+      "lightmapTexture": null,
+      "useLightmapAsShadowmap": false,
+      "emissiveFresnelParameters": null,
+      "specularTexture": null,
+      "bumpTexture": null,
+      "useSpecularOverAlpha": true,
+      "disableLighting": false,
+      "useEmissiveAsIllumination": false,
+      "linkEmissiveWithDiffuse": true,
+      "twoSidedLighting": false,
+      "maxSimultaneousLights": 4,
+      "useGlossinessFromSpecularMapAlpha": false,
+      "name": "box",
+      "id": "a522e273-dabe-4f9f-89fb-4f3f2f1bc963",
+      "backFaceCulling": true,
+      "wireframe": false,
+      "alpha": 1.0,
+      "alphaMode": 2
+    }
+  ],
+  "multiMaterials": [],
+  "particleSystems": null,
+  "lensFlareSystems": null,
+  "shadowGenerators": [],
+  "skeletons": [],
+  "actions": null,
+  "metadata": null,
+  "workerCollisions": false,
+  "morphTargetManagers": null,
+  "useDelayedTextureLoading": true
+}

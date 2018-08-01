@@ -41,3 +41,7 @@ http://doc.babylonjs.com/resources/3dsmax#how-to-install-the-3ds-max-plugin
 務必先關閉3dMax
 將Max2Babylon-1.2.18.zip解壓縮，把所有dll放到C:/Programs/Autodesk/3ds Max 2015/bin/assemblies內(視max版本調整路徑)
 重啟3dMax確認help右邊是否有Babylon插件,有表示成功
+
+
+https://github.com/a-jie/threejs-geometry-modifiers
+https://code.google.com/archive/p/as3dmod/wikis/AS3Dmod_Tutorial.wiki

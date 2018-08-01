@@ -12,6 +12,7 @@ var box;
 var car;
 var mixer;
 var clock;
+var geObj;
 function init() {
 
 	clock = new THREE.Clock();
@@ -61,26 +62,7 @@ function init() {
 	scene.background = new THREE.Color(0xaaaaaa);
 
 	var gltfLoader = new THREE.GLTFLoader();
-	gltfLoader.load('assets/test.gltf',
-		function (gltf) {
-			//scene = gltf.scene;
-			scene.add(gltf.scene);
-			car = gltf.scene.children[0];
-			box = gltf.scene.children[1];
-			mixer = new THREE.AnimationMixer(car);
-			mixer.clipAction(gltf.animations[0]).play();
-			animate();
-			//scene = gltf.scene;
-			//scene = gltf.scene;
-			//camera = gltf.cameras[0];
-		},
-		function (xhr) {
-			console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-		},
-		function (error) {
-			console.log('An error happened');
-		}
-	);
+	gltfLoader.load('assets/test.gltf', this.loadedGLTF);
 
 	//light
 	var light = new THREE.DirectionalLight(0xffffff, 20);
@@ -97,8 +79,31 @@ function init() {
 	//Cube
 	geometry = new THREE.CubeGeometry(20, 10, 10);
 	var cubeMat = new THREE.MeshLambertMaterial({ color: 0xff0000 });
-	var geObj = new THREE.Mesh(geometry, cubeMat);
+	geObj = new THREE.Mesh(geometry, cubeMat);
 	//scene.add(geObj);
+}
+
+function loadedGLTF(gltf) {
+	//scene = gltf.scene;
+	scene.add(gltf.scene);
+	car = gltf.scene.children[0];
+	box = gltf.scene.children[1];
+	mixer = new THREE.AnimationMixer(car);
+	var a = car.geometry.attributes.position;
+	a[0] = 100;
+	mixer.clipAction(gltf.animations[0]).play();
+	animate();
+	//scene = gltf.scene;
+	//scene = gltf.scene;
+	//camera = gltf.cameras[0];
+	try {
+		var modifiler = new ModifierStack(geObj);
+		var bend = new Bend(0, 0, 70);
+		modifiler.addModifier(bend);
+	}
+	catch (e) {
+		console.log(e.message);
+	}
 }
 
 function animate() {
